@@ -63,7 +63,7 @@ namespace FunctionApp1
                 SmtpClient smtpServer = new SmtpClient("smtp.gmail.com"); // Replace with your SMTP server address  
 
                 mail.From = new MailAddress("me@microsoft.com"); // Replace with your email address  
-                mail.To.Add("jody.r.ford@gmail.com"); // Replace with the recipient's email address  
+                mail.To.Add("me@microsoft.com"); // Replace with the recipient's email address  
                 mail.Subject = subject;
                 mail.Body = body;
 
