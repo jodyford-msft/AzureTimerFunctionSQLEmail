@@ -62,13 +62,13 @@ namespace FunctionApp1
                 MailMessage mail = new MailMessage();
                 SmtpClient smtpServer = new SmtpClient("smtp.gmail.com"); // Replace with your SMTP server address  
 
-                mail.From = new MailAddress("jody.r.ford@gmail.com"); // Replace with your email address  
+                mail.From = new MailAddress("me@microsoft.com"); // Replace with your email address  
                 mail.To.Add("jody.r.ford@gmail.com"); // Replace with the recipient's email address  
                 mail.Subject = subject;
                 mail.Body = body;
 
                 smtpServer.Port = 587; // Replace with your SMTP server port (commonly 25, 587, or 465)  
-                smtpServer.Credentials = new System.Net.NetworkCredential("jody.r.ford@gmail.com", "password"); // Replace with your email address and password  
+                smtpServer.Credentials = new System.Net.NetworkCredential("me@microsoft.com", "password"); // Replace with your email address and password  
                 smtpServer.EnableSsl = true;
 
                 await smtpServer.SendMailAsync(mail);
